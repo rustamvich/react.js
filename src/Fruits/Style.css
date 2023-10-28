@@ -1,0 +1,155 @@
+/* Style */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  padding: 1rem;
+  background-color: wheat;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  row-gap: 1.5rem;
+  align-self: center;
+  justify-content: space-around;
+}
+
+.items {
+  width: 11rem;
+  height: 10rem;
+  background-color: teal;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.items h4 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.items > img {
+  width: 100%;
+  height: 85%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 780px) {
+  .items {
+    width: 9rem;
+    height: 8rem;
+    background-color: teal;
+    border-radius: 0.5rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .items h4 {
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    right: 0;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .items {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .items h4 {
+    bottom: -0.1rem;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .items {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .items h4 {
+    font-size: 0.9em;
+    bottom: -0.157rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .items {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .items h4 {
+    font-size: 0.8em;
+    bottom: -0.12rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .items {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .items h4 {
+    font-size: 0.7em;
+    bottom: -0.13rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .items {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .items h4 {
+    font-size: 0.6em;
+    bottom: -0.102rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .items {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .items h4 {
+    font-size: 0.5em;
+    bottom: -0.1rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container {
+    grid-template-columns: auto;
+  }
+
+  .items {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .items h4 {
+    font-size: 0.8em;
+    bottom: -0.12rem;
+  }
+}
