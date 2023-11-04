@@ -138,7 +138,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 220px) {
   .container {
     grid-template-columns: auto;
   }
